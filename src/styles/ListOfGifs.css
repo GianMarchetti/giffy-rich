@@ -6,7 +6,10 @@
   column-count: var(--results-columns);
   column-gap: .5em;
   min-height: 100vh;
-  /* background-color: #000; */
+  width: 100%;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
 }
 
 .ListOfGifs-item {
@@ -21,6 +24,15 @@
 
 @media (min-width: 768px) {
   :root {
-    --results-columns: 4;
+    --results-columns: 3;
 }
+  .ListOfGifs{
+    width: 80%;
+  }
+}
+
+@media (min-width: 1050px) {
+  :root {
+      --results-columns: 4;
+    }
 }
